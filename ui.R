@@ -4,7 +4,7 @@ shinyUI(pageWithSidebar(
     sidebarPanel(
         h3('Stocks'),
         p('What stocks do you wish to analyze?'),
-        checkboxGroupInput("stocks", "Checkbox",
+        checkboxGroupInput("stocks", "Stocks:",
                            c("Microsoft (MSFT)" = "MSFT",
                              "Apple (AAPL)" = "AAPL",
                              "Google (GOOGL)" = "GOOGL")),
@@ -22,6 +22,6 @@ shinyUI(pageWithSidebar(
         h3('Bar plot of monthly stock returns'),
         showOutput("myChart", "morris"),
         h4('Thanks...'),
-        p('Here I\'d like to say thanks to team of DevelopingDataProducts Coursera course for help in cretion of this app.')
+        p('Here I\'d like to say thanks to team of DevelopingDataProducts Coursera course for help in creation of this app.')
     )
 ))
